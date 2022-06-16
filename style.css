@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --veryLightGray: hsl(0, 0%, 95%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --bigShoulders: "Big Shoulders Display", cursive;
+  --lexend: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--lexend);
+  background-color: var(--veryLightGray);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: hsl(32, 23%, 65%);
+  margin-bottom: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px 15px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+nav a:hover {
+  color: #fff;
+}
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68%;
+}
+@media screen and (max-width: 375px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    font-size: 10px;
+    padding: 10px 15px;
+    margin: 3px 8px;
+  }
+  main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .description {
+    border-radius: 10px;
+    margin: 10px 2px;
+  }
+}
+img {
+  margin-bottom: 1em;
+}
+div h1 {
+  font-family: var(--bigShoulders);
+  color: var(--veryLightGray);
+  margin-bottom: 1em;
+}
+div p {
+  font-size: 15px;
+  color: var(--transparentWhite);
+  width: 100%;
+  padding: 5px;
+  height: 50%;
+  margin-bottom: 20px;
+}
+.description {
+  padding: 2em;
+  height: 450px;
+}
+.sedans {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.luxury {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--veryLightGray);
+}
+.left-btn {
+  color: hsl(31, 77%, 52%);
+}
+.middle-btn {
+  color: hsl(184, 100%, 22%);
+}
+.right-btn {
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
